@@ -1,5 +1,5 @@
 # coding=utf8
-# Copyright (c) 2018 CineUse
+
 import os
 import re
 import sys

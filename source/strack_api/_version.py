@@ -1,3 +1,3 @@
-# coding=utf8
-# Copyright (c) 2018 CineUse
+# coding=utf8docker 搭建 私有 pip
+
 __version__ = '1.0.0'

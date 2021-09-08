@@ -1,5 +1,5 @@
 # coding=utf8
-# Copyright (c) 2018 CineUse
+
 import os
 import re
 
@@ -17,7 +17,7 @@ requires = [
 
 # Read version from source.
 with open(
-        os.path.join(SOURCE_PATH, 'strack_api', '_version.py')
+        os.path.join(SOURCE_PATH, 'strack_api', '_version.py'), 'r', encoding='UTF-8'
 ) as _version_file:
     VERSION = re.match(
         r'.*__version__ = \'(.*?)\'', _version_file.read(), re.DOTALL
@@ -25,14 +25,14 @@ with open(
 
 # Call main setup.
 setup(
-    name='strack3-python-api',
+    name='strack-api',
     version=VERSION,
     description='Python API for Strack.',
     long_description=open(README_PATH, 'r', encoding='UTF-8').read(),
     keywords='strack, python, api',
-    url='http://www.cineuse.com/',
-    author='cineuse',
-    author_email='support@cineuse.com',
+    url='https://github.com/cgpipline/strack',
+    author='strack',
+    author_email='weiwei163@foxmail.com',
     license='Apache License (2.0)',
     packages=find_packages(SOURCE_PATH),
     package_dir={
