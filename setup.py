@@ -22,7 +22,7 @@ setup(
     name='strack3-python-api',
     version=VERSION,
     description='Python API for Strack.',
-    long_description=open(README_PATH).read(),
+    long_description=open(README_PATH, 'r', encoding='UTF-8').read(),
     keywords='strack, python, api',
     url='http://www.cineuse.com/',
     author='cineuse',
