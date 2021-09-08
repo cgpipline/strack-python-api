@@ -9,6 +9,12 @@ ROOT_PATH = os.path.dirname(os.path.realpath(__file__))
 SOURCE_PATH = os.path.join(ROOT_PATH, 'source')
 README_PATH = os.path.join(ROOT_PATH, 'README.md')
 
+requires = [
+    'chardet >= 4.0',
+    'requests >= 2, <3',
+    'six >=1.16,<2'
+]
+
 # Read version from source.
 with open(
         os.path.join(SOURCE_PATH, 'strack_api', '_version.py')
@@ -33,8 +39,6 @@ setup(
         '': 'source'
     },
 
-    install_requires=[
-        # 'requests >= 2, <3', 'six'
-    ],
+    install_requires=requires,
     zip_safe=False
 )

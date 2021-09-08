@@ -2,7 +2,7 @@ from pprint import pprint
 
 from strack_api.strack import Strack
 
-st = Strack(base_url="https://strack.cgspread.com/", login_name="strack", password="strack")
+st = Strack(base_url="http://10.168.30.17:19801//", login_name="strack", password="strack")
 
 import time
 
