@@ -6,7 +6,7 @@ import re
 from setuptools import setup, find_packages
 
 ROOT_PATH = os.path.dirname(os.path.realpath(__file__))
-SOURCE_PATH = os.path.join(ROOT_PATH, 'source')
+SOURCE_PATH = os.path.join(ROOT_PATH, 'src')
 README_PATH = os.path.join(ROOT_PATH, 'README.md')
 
 requires = [
@@ -15,7 +15,7 @@ requires = [
     'six >=1.16,<2'
 ]
 
-# Read version from source.
+# Read version from src.
 with open(
         os.path.join(SOURCE_PATH, 'strack_api', '_version.py'), 'r', encoding='UTF-8'
 ) as _version_file:
@@ -36,7 +36,7 @@ setup(
     license='Apache License (2.0)',
     packages=find_packages(SOURCE_PATH),
     package_dir={
-        '': 'source'
+        '': 'src'
     },
 
     install_requires=requires,

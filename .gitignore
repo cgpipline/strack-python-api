@@ -23,7 +23,7 @@ $RECYCLE.BIN/
 /build/*
 /dist/
 
-/source/strack3_python_api.egg-info
+/src/strack_api.egg-info
 
 # =========================
 # Operating System Files
